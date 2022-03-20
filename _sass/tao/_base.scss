@@ -1,0 +1,28 @@
+/**
+ * Some base settings for common tags
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  font-family: var(--body-font);
+  line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

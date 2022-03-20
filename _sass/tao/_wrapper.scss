@@ -1,0 +1,10 @@
+/**
+ * Styles for the wrapper
+ */
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing);
+  max-width: calc(600px + 2 * var(--spacing)); // Refer: https://socialtriggers.com/perfect-content-width/
+}

@@ -1,0 +1,28 @@
+/**
+ * Styles for the header
+ */
+
+.masthead {
+  margin-top: var(--spacing);
+  margin-bottom: calc(3 * var(--spacing));
+}
+
+.masthead-title {
+  margin: 0;
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: var(--body-color-dark);
+    }
+  }
+}
+
+.masthead-tagline {
+  margin-top: var(--spacing);
+  margin-bottom: 0;
+  color: var(--body-color-light);
+}
