@@ -2,4 +2,46 @@
 layout: default
 ---
 
-{{ content }}
+<section>
+  {% assign posts = site.posts %}
+  {% if paginator %}
+    {% assign posts = paginator.posts %}
+  {% endif %}
+  {% for post in posts %}
+    <article class="post-entry">
+      <h1 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+      {% if post.subtitle %}
+        <h4 class="post-subtitle">{{ post.subtitle }}</h4>
+      {% endif %}
+      {% if post.image %}
+        <div class="thumbnail-container">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </a>
+        </div>
+      {% endif %}
+      <p>
+        {{ post.content | strip_html | truncate: 350 }} <a href="{{ post.url | relative_url }}"><i class="fa-solid fa-angles-right"></i></a>
+      </p>
+
+      <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">
+        <i class="fa-solid fa-calendar-days"></i> {{ post.date | date_to_string }}
+      </time>
+    </article>
+  {% endfor %}
+</section>
+
+{% if paginator %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a class="prev" href="{{ paginator.previous_page_path | relative_url }}"><i class="fas fa-chevron-left"></i></a>
+    {% else %}
+      <span class="prev"><i class="fas fa-chevron-left"></i></span>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a class="next" href="{{ paginator.next_page_path | relative_url }}"><i class="fas fa-chevron-right"></i></a>
+    {% else %}
+      <span class="next"><i class="fas fa-chevron-right"></i></span>
+    {% endif %}
+  </div>
+{% endif %}

@@ -11,6 +11,7 @@ $screen-desktop: 1024px;
   --spacing: 1em;
 
   --body-bg:          var(--oc-white);
+  --body-fg:          var(--oc-gray-1);
   --body-color-light: var(--oc-gray-6);
   --body-color:       var(--oc-gray-8);
   --body-color-dark:  var(--oc-black);
@@ -26,6 +27,7 @@ $screen-desktop: 1024px;
 @media (prefers-color-scheme: dark) {
   :root {
     --body-bg:          var(--oc-gray-9);
+    --body-fg:          var(--oc-gray-8);
     --body-color-light: var(--oc-gray-6);
     --body-color:       var(--oc-gray-3);
     --body-color-dark:  var(--oc-white);
