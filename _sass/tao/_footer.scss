@@ -1,0 +1,38 @@
+/**
+ * Styles for the footer
+ */
+
+.footer {
+  margin-top: auto;
+  margin-bottom: var(--spacing);
+  padding-top: calc(3 * var(--spacing));
+  color: var(--body-color-light);
+  text-align: center;
+
+  .columns {
+    font-size: .8em;
+  }
+}
+
+.social {
+  a {
+    color: inherit;
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: var(--body-color-dark);
+    }
+  }
+}
+
+@media screen and (min-width: $screen-laptop) {
+  .footer .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing);
+    text-align: left;
+  }
+}

@@ -3,8 +3,11 @@
  */
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding: var(--spacing);
   max-width: calc(600px + 2 * var(--spacing)); // Refer: https://socialtriggers.com/perfect-content-width/
+  min-height: 100vh;
 }
