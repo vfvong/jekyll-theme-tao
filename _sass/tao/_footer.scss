@@ -14,25 +14,31 @@
   }
 }
 
-.social {
-  a {
-    color: inherit;
-    margin-left: var(--spacing);
-    margin-right: var(--spacing);
+.social a {
+  color: inherit;
+  margin-left: var(--spacing);
+  margin-right: var(--spacing);
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: var(--body-color-dark);
-    }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--body-color-dark);
   }
 }
 
+
 @media screen and (min-width: $screen-laptop) {
-  .footer .columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing);
+  .footer {
     text-align: left;
+
+    .columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--spacing);
+    }
+  }
+
+  .social a {
+    margin-left: 0;
   }
 }
