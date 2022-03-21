@@ -22,7 +22,28 @@
 }
 
 .masthead-tagline {
-  margin-top: var(--spacing);
+  margin-top: 0;
   margin-bottom: 0;
   color: var(--body-color-light);
+}
+
+.nav {
+  font-weight: bold;
+  font-size: .8em;
+  margin-top: calc(2 * var(--spacing));
+
+  .active {
+    color: var(--body-color-dark);
+  }
+}
+
+.nav-item {
+  margin-right: var(--spacing);
+  color: var(--body-color-light);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--body-color-dark);
+  }
 }
