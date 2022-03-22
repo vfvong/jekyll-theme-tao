@@ -2,6 +2,56 @@
  * Styles for the pages and posts
  */
 
-.page {
+.page-content,
+.post-content {
   font-family: var(--text-font);
+}
+
+.page-title,
+.post-title {
+  margin: 0;
+}
+
+.post-subtitle {
+  margin: 0;
+  color: var(--body-color-light);
+}
+
+.post-meta {
+  color: var(--body-color-light);
+  font-size: .8em;
+}
+
+.post-meta-top {
+  margin-bottom: var(--spacing);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing);
+}
+
+.post-categories {
+  text-align: right;
+}
+
+a.post-category,
+a.post-tag {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: var(--body-color-dark);
+  }
+}
+
+.post-meta-bottom {
+  margin-top: var(--spacing);
+}
+
+.post-prev {
+  text-align: left;
+}
+
+.post-next {
+  text-align: right;
 }

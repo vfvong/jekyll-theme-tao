@@ -5,20 +5,6 @@
 .post-entry {
   margin-bottom: calc(2 * var(--spacing));
 
-  .post-title {
-    margin: 0;
-  }
-
-  .post-subtitle {
-    margin: 0;
-    color: var(--body-color-light);
-  }
-
-  .post-meta {
-    color: var(--body-color-light);
-    font-size: .8em;
-  }
-
   .thumbnail-container {
     margin-top: var(--spacing);
     border-radius: .5em;
@@ -32,11 +18,12 @@
 }
 
 .pagination {
+  margin-top: var(--spacing);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  font-size: .8em;
 
   .prev, .next {
-    text-align: center;
     padding: var(--spacing);
     border: 1px solid;
   }
@@ -49,15 +36,21 @@
     border-radius: 0 1em 1em 0;
   }
 
-  span {
+  .home-prev, .home-next {
+    text-align: center;
+  }
+
+  .unable {
     color: var(--body-color-light);
+    border-style: dashed;
   }
 
   a {
-    color: inherit;
+    color: var(--body-color-light);
 
     &:hover,
     &:focus {
+      text-decoration: none;
       background-color: var(--body-fg);
     }
   }
