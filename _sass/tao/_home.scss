@@ -18,7 +18,7 @@
 }
 
 .pagination {
-  margin-top: var(--spacing);
+  margin-top: calc(2 * var(--spacing));
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-size: .8em;
