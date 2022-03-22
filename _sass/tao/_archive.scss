@@ -27,6 +27,10 @@
   }
 }
 
+.archive-date {
+  font-family: var(--code-font);
+}
+
 @media screen and (min-width: $screen-laptop) {
   .taxonomies {
     grid-template-columns: repeat(3, 1fr);
