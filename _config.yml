@@ -1,0 +1,15 @@
+title: Tao
+tagline: A content-first minimalist Jekyll theme for blogs
+description: This is a stupid demo site for the Jekyll theme Tao.
+
+author:
+  name: Song-Zi Vong
+  url:  https://twitter.com/vfvong
+
+plugins:
+  - jekyll-paginate
+
+paginate: 2
+
+categories_path: /categories/
+tags_path: /tags/
