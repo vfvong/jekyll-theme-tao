@@ -5,6 +5,7 @@
 .masthead {
   margin-top: var(--spacing);
   margin-bottom: calc(3 * var(--spacing));
+  text-align: center;
 }
 
 .masthead-title {
@@ -45,5 +46,11 @@
   &:focus {
     text-decoration: none;
     color: var(--body-color-dark);
+  }
+}
+
+@media screen and (min-width: $screen-laptop) {
+  .masthead {
+    text-align: left;
   }
 }
