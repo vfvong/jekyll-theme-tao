@@ -43,7 +43,7 @@ layout: default
   {% endif %}
 
   {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ post.title }}">
+    <img class="post-image" src="{{ page.image | relative_url }}" alt="{{ post.title }}">
   {% endif %}
 
   <div class="post-content">
