@@ -5,15 +5,25 @@
 .post-entry {
   margin-bottom: calc(2 * var(--spacing));
 
+  // Refer: https://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
   .thumbnail-container {
     margin-top: var(--spacing);
     border-radius: .5em;
     overflow: hidden;
-  }
-  
-  .thumbnail-container img {
-    margin-top    : -20%;
-    margin-bottom : -20%;
+    height: 50vw;
+    max-height: 240px;
+    position: relative;
+
+    .post-image {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      height: auto;
+      -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+    }
   }
 }
 
