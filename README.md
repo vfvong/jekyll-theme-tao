@@ -8,8 +8,7 @@ Tao is a content-first minimalist Jekyll theme for blogs.
 
 Check the [demo](http://vfvong.blog/jekyll-theme-tao/).
 
-![screenshot](screenshot-light.png)
-![screenshot](screenshot-dark.png)
+![screenshot](screenshot.jpg)
 
 ## Highlight Features <!-- omit in toc -->
 
