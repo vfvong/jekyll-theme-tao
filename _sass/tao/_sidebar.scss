@@ -58,6 +58,12 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: $screen-laptop) {
+  .sidebar-toggle {
+    position: fixed;
+  }
+}
+
 .sidebar-toggle:active::before,
 #sidebar-checkbox:focus ~ .sidebar-toggle::before,
 #sidebar-checkbox:checked ~ .sidebar-toggle::before {
