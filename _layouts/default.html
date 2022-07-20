@@ -4,11 +4,14 @@
   <body>
     {% include sidebar.html %}
     <div class="wrapper">
+      {% include header.html %}
       <main>
         {{ content }}
       </main>
       {% include footer.html %}
     </div>
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script src="{{ '/assets/js/tao/sidebar.js' | relative_url }}"></script>
 
     {% if page.math %}
       {% include mathjax.html %}

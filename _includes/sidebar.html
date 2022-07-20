@@ -1,20 +1,12 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 <div class="sidebar" id="sidebar">
-  <header class="masthead">
-    <h2 class="masthead-title">
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </h2>
-    {% if site.tagline %}
-      <h5 class="masthead-tagline">{{ site.tagline }}</h5>
-    {% endif %}
-    {% if site.data.navigation %}
-      <nav class="nav">
-        {% for item in site.data.navigation %}
-          <a class="nav-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
-            {{ item.title }}
-          </a>
-        {% endfor %}
-        </nav>
-    {% endif %}
-  </header>
+  {% if site.data.navigation %}
+    <nav class="nav">
+      {% for item in site.data.navigation %}
+        <a class="nav-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
+          {{ item.title }}
+        </a>
+      {% endfor %}
+      </nav>
+  {% endif %}
 </div>

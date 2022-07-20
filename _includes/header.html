@@ -5,13 +5,4 @@
   {% if site.tagline %}
     <h5 class="masthead-tagline">{{ site.tagline }}</h5>
   {% endif %}
-  {% if site.data.navigation %}
-    <nav class="nav">
-      {% for item in site.data.navigation %}
-        <a class="nav-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
-          {{ item.title }}
-        </a>
-      {% endfor %}
-      </nav>
-  {% endif %}
 </header>
