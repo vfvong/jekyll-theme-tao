@@ -8,10 +8,28 @@
   bottom: 0;
   left: calc(0px - var(--sidebar-width));
   width: var(--sidebar-width);
+  padding: var(--spacing);
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-color);
+  text-align: center;
   visibility: hidden;
   overflow-y: auto;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
+
+  a {
+    color: var(--sidebar-accent-color);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: var(--sidebar-color);
+    }
+  }
+}
+
+.sidebar-section {
+  margin-bottom: calc(2 * var(--spacing));
 }
 
 .sidebar-checkbox {
@@ -81,20 +99,32 @@
 .nav {
   font-weight: bold;
   font-size: .8em;
-  margin-top: calc(2 * var(--spacing));
 
   .active {
-    color: var(--body-color-dark);
+    color: var(--sidebar-color);
   }
 }
 
-.nav-item {
-  margin-right: var(--spacing);
-  color: var(--body-color-light);
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+}
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: var(--body-color-dark);
+.nav-item {
+  margin-bottom: var(--spacing);
+}
+
+// Social
+
+.social {  
+  a {
+    margin-left: calc(0.5 * var(--spacing));
+    margin-right: calc(0.5 * var(--spacing));
   }
+}
+
+// Power
+
+.power {
+  font-size: .8em;
 }

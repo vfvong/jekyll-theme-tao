@@ -24,7 +24,10 @@ $screen-desktop: 1024px;
   --line-height:      1.5;
   --body-font-size:   16px;
 
-  --sidebar-width:    16rem;
+  --sidebar-width:        16rem;
+  --sidebar-bg:           var(--oc-gray-8);
+  --sidebar-color:        var(--oc-gray-5);
+  --sidebar-accent-color: var(--oc-white);
 }
 
 @media (prefers-color-scheme: dark) {
