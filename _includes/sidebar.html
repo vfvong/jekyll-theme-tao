@@ -1,5 +1,9 @@
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 <div class="sidebar" id="sidebar">
+  {% if site.author and site.author.avatar %}
+    <img class="sidebar-section avatar" src="{{ site.author.avatar | relative_url }}"/>
+  {% endif %}
+
   {% if site.description %}
     <p class="sidebar-section">
       {{ site.description }}

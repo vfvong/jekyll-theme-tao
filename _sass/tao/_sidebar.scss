@@ -26,6 +26,10 @@
       color: var(--sidebar-color);
     }
   }
+
+  p {
+    margin-top: 0;
+  }
 }
 
 .sidebar-section {
@@ -98,6 +102,16 @@
   -webkit-transform: translateX(var(--sidebar-width));
       -ms-transform: translateX(var(--sidebar-width));
           transform: translateX(var(--sidebar-width));
+}
+
+// Avatar
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--body-color-light);
+  border-radius: 50%;
+  margin-top: var(--spacing);
 }
 
 // Navigation
