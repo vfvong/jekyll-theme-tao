@@ -3,8 +3,9 @@ tagline: A content-first minimalist Jekyll theme for blogs
 description: This is a stupid demo site for the Jekyll theme Tao.
 
 author:
-  name: Song-Zi Vong
-  url:  https://twitter.com/vfvong
+  name:   Song-Zi Vong
+  url:    https://twitter.com/vfvong
+  avatar: https://avatars.githubusercontent.com/u/97170774
 
 plugins:
   - jekyll-paginate
