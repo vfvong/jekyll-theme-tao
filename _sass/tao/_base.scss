@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden; // https://stackoverflow.com/questions/53439785/stop-horizontal-scrolling-with-translate-transform
+}
+
 body {
   color: var(--body-color);
   background-color: var(--body-bg);
