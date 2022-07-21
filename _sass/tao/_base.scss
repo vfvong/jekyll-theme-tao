@@ -12,6 +12,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--body-font-size);
   line-height: var(--line-height);
+  overflow-x: hidden; // https://stackoverflow.com/questions/53439785/stop-horizontal-scrolling-with-translate-transform
 }
 
 h1, h2, h3, h4, h5, h6 {
