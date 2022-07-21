@@ -3,12 +3,12 @@
  */
 
 .masthead {
-  margin-top: var(--spacing);
   margin-bottom: calc(3 * var(--spacing));
   text-align: center;
 }
 
 .masthead-title {
+  display: inline;
   margin: 0;
 
   a {
@@ -23,34 +23,18 @@
 }
 
 .masthead-tagline {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--body-color-light);
 }
 
-.nav {
-  font-weight: bold;
-  font-size: .8em;
-  margin-top: calc(2 * var(--spacing));
-
-  .active {
-    color: var(--body-color-dark);
-  }
-}
-
-.nav-item {
-  margin-right: var(--spacing);
-  color: var(--body-color-light);
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: var(--body-color-dark);
-  }
-}
-
 @media screen and (min-width: $screen-laptop) {
   .masthead {
     text-align: left;
+  }
+
+  .masthead-tagline {
+    display: inline;
   }
 }

@@ -1,0 +1,40 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<div class="sidebar" id="sidebar">
+  {% if site.author and site.author.avatar %}
+    <img class="sidebar-section avatar" src="{{ site.author.avatar | relative_url }}"/>
+  {% endif %}
+
+  {% if site.description %}
+    <p class="sidebar-section">
+      {{ site.description }}
+    </p>
+  {% endif %}
+
+  {% if site.data.navigation %}
+    <nav class="sidebar-section nav">
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a class="{% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+
+  {% if site.data.social %}
+  <div class="sidebar-section social">
+    {% for social in site.data.social %}
+      <a href="{{ social.url }}" target="_blank">
+        <i class="{{ social.icon | default: 'fas fa-link' }}" title="{{ social.title }}"></i>
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p class="sidebar-section power">
+    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> & <a href="https://github.com/vfvong/jekyll-theme-tao" target="_blank">Tao</a>
+  </p>
+</div>
